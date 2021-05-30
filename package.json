@@ -1,0 +1,39 @@
+{
+  "homepage": "https://gaievskyi.github.io/haw",
+  "name": "Haw",
+  "version": "0.0.1",
+  "description": "Website of a shelter",
+  "keywords": [
+    "shelter",
+    "dogs",
+    "cats"
+  ],
+  "license": "MIT",
+  "author": "Daniel Gajewski, Bartosz Baranowicz, Patrycja Błachut, Nina Szopa",
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "build": "parcel build index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.10.3",
+    "postcss-modules": "^4.0.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.0",
+    "swiper": "^6.6.2"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 0.2%",
+          "ie >= 9",
+          "not dead"
+        ]
+      }
+    }
+  }
+}

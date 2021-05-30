@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.container {
+  padding: 0 15px;
+
+  @media (min-width: $sm) {
+    padding: 0 calc(50vw - 270px);
+  }
+
+  @media (min-width: $md) {
+    padding: 0 calc(50vw - 360px);
+  }
+
+  @media (min-width: $lg) {
+    padding: 0 calc(50vw - 480px);
+  }
+
+  @media (min-width: $xl) {
+    padding: 0 calc(50vw - 590px);
+  }
+}

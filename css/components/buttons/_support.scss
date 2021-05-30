@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+.btn-support {
+  position: relative;
+  transition: $animation;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 15px 35px;
+  font-weight: 500;
+  font-size: 14px;
+
+  &::before {
+    transition: $animation;
+    content: "";
+
+    opacity: 0;
+    transform: translateX(100%);
+    position: absolute;
+    bottom: 3px;
+    width: 25%;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  &::after {
+    transition: $animation;
+    content: "";
+
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    width: 25%;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: $md) {
+    &:hover {
+      color: white;
+      background-color: transparent;
+
+      &::after {
+        opacity: 100%;
+        transform: translateX(-50%);
+      }
+      &::before {
+        opacity: 100%;
+        transform: translateX(50%);
+      }
+    }
+  }
+}

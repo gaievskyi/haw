@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.see-all-btn {
+  transition: $animation;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: $see-all-btn-color;
+}

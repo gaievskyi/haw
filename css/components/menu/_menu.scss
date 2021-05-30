@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+header .menu {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $md) {
+    .support__icon {
+      display: none;
+      visibility: hidden;
+      width: 0;
+    }
+
+    .btn {
+      width: auto;
+      justify-content: center;
+    }
+  }
+}

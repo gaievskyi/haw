@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+.main {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  .wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: scroll;
+  }
+}

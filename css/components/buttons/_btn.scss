@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+.btn {
+  transition: $animation;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: $primary;
+  border-radius: 30px;
+  padding: 0 20px;
+  height: 40px;
+  width: 237px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+
+  @media screen and (min-width: $md) {
+    &:hover {
+      filter: drop-shadow(0px 3px 5px #e1c600);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+  }
+}

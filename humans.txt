@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Daniel Gajewski -- Tech Lead -- @haievskyi / @gaievskyi
+    Bartosz Baranowicz -- Back End Engineer -- @ectobiologist
+    Patrycja Błachut -- Database Engineer -- @melithvia
+    Nina Szopa -- Project Manager
+
+# THANKS
+
+    Bartosz Baranowicz
+    Patrycja Błachut
+    Nina Szopa
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Sass/SCSS
+    Apache Server Configs, Modernizr, Normalize.css
