@@ -54,14 +54,14 @@ const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  speed: 1000,
+  speed: 2000,
   slidesPerView: 3,
   spaceBetween: 25,
 
   // Navigation arrows
   navigation: {
-    nextEl: "btn-slider-nav-next",
-    prevEl: "btn-slider-nav-prev",
+    nextEl: "navigation-next",
+    prevEl: "navigation-prev",
   },
 
   autoplay: {
