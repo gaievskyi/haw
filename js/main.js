@@ -1,8 +1,12 @@
 "use strict";
 
 window.addEventListener("load", () => {
+  document.body.setAttribute("style", "overflow:hidden;");
   const loader = document.querySelector(".loader-wrapper");
   loader.className += " loaded";
+  setTimeout(function () {
+    document.body.setAttribute("style", "overflow:visible;");
+  }, 2000);
 });
 
 const burgerBtn = document.querySelector(".menu-burger");
