@@ -8,6 +8,11 @@
   border-radius: 30px;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   mask-image: radial-gradient(white, black);
+
+  @media screen and (min-width: $lg) {
+    width: 540px;
+  }
+
   @supports not (row-gap: 20px) {
     width: (100% / 2);
     margin-bottom: 20px;
