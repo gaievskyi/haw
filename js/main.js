@@ -1,5 +1,10 @@
 "use strict";
 
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-wrapper");
+  loader.className += " loaded";
+});
+
 const burgerBtn = document.querySelector(".menu-burger");
 const burgerInner = document.querySelector(".menu-overlay");
 
