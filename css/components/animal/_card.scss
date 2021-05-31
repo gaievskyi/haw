@@ -1,23 +1,21 @@
 @charset 'utf-8';
 
 .main .animal {
-  margin-right: 30px;
   position: relative;
-  min-width: 400px;
-  width: 540px;
-  height: 400px;
+  max-width: 540px;
+  min-height: 400px;
   overflow: hidden;
   border-radius: 30px;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   mask-image: radial-gradient(white, black);
+  @supports not (row-gap: 20px) {
+    width: (100% / 2);
+    margin-bottom: 20px;
+  }
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &:hover .animal__bg,
   &:focus .animal__bg {
@@ -85,9 +83,17 @@
 
   .animal__bttns {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    @supports not (gap: 10px) {
+      margin: -0.5rem;
+    }
   }
 
   .bttns__btn {
-    margin-right: 10px;
+    @supports not (gap: 10px) {
+      width: (100% / 2);
+      margin-bottom: 10px;
+    }
   }
 }
